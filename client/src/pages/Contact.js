@@ -22,7 +22,7 @@ const Contact = () => {
     
     try {
       // Send data to backend API
-      const response = await axios.post('http://localhost:5000/api/contact', formData);
+      const response = await axios.post('https://online-courses-hub-backend.onrender.com/api/contact', formData);
       
       setMessage('✅ Thank you! Your message has been sent. We will get back to you within 24 hours.');
       setFormData({ name: '', email: '', message: '' });
